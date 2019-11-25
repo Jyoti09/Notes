@@ -1,0 +1,98 @@
+<html>
+	<head>
+		<style>
+/*			.options {
+					border:1px solid red;
+					color:gray;
+					float:left;
+}
+
+		.optionsList{
+				border: 1px solid yellow;
+				padding: 10px;
+} 
+} */
+.container1{
+margin: 20px;
+border: 1px solid black;}
+
+.container2{
+margin: 20px;
+border: 1px solid gray;}
+
+#p1{
+border: 1px solid black;
+background:yellow;
+margin:0;
+padding:0;
+}
+
+#p2{
+border: 1px solid red;
+background:red;
+}
+#p3{
+border: 1px solid blue;
+background:blue;
+margin:0;
+padding:0;
+}
+#p4{
+border: 1px solid green;
+background:green;
+
+}
+#p5{
+border: 1px solid black;
+background:pink;
+margin:0;
+padding:0;
+}
+
+#p6{
+border: 1px solid black;
+background:magenta;
+margin:0;
+padding:0;
+}
+.container2 #p2{
+		float:left;}
+.container3 #p2{
+	float: left;}
+		</style>
+	</head>
+
+	<body>
+
+	<!--	<div class = "options">
+					<a href="#"> item1 </a>
+					<a href="#"> item2 </a>
+				<div class ="optionsList">
+					<a href="#"> item3 </a>
+						<ul> <li>item1 </li> <li>item2 </li> <li>item3 </li><ul>
+				</div>
+		</div> -->
+	<div class="container1">
+			<p id="p1">Para1 </p>
+			<p id="p2">Para2 </p>
+			<p id="p3">Para3: In this second container paragraph's have the same id's as container 1. As I floated paragraph 2 Paragraph, it shifted to the left most corner of it's container but as in float it maintains it's normal flow, a paragraph has margin above and below. So it is shifted to the left most corner of it's line. The margin space above is filled with paragraph 3's content which is the text describing the float concept. The space below is also occupied by paragraph 3's content. All the space of paragraph 2 if fully filled and the normal flow of the content continues. Hence paragraph 4 appears in the next line. Maintaining the block level flow. I am still confused why there is 2 gap below the Para2 instead of 1 margin equivalent gap.This margin may come from the float display issue. As it transform the display to block level element. And hence paragraph 2 retains it's new line property. After that it goes back to normal flow. It might also be from the overflow issue.</p>
+			<p id="p4">There are three paragraphs above. Paragraph one has margin zero. But paragraph 2 has margin of 20 px so there is a white line above and below it. Which means white line after paragraph one and above paragraph 3. Paragraph 3 has white line below from top margin of paragraph 4. The paragraphs are not floated and hence have the normal flow. </p>
+	</div>
+	<div class="container2">
+			<p id="p1">Para1 </p>
+			<p id="p2">Para2 </p>
+			<p id="p3">Para3 In this second container paragraph's have the same id's as container 1. As I floated paragraph 2 Paragraph, it shifted to the left most corner of it's container but as in float it maintains it's normal flow, a paragraph has margin above and below. So it is shifted to the left most corner of it's line. The margin space above is filled with paragraph 3's content which is the text describing the float concept. The space below is also occupied by paragraph 3's content. All the space of paragraph 2 if fully filled and the normal flow of the content continues. Hence paragraph 4 appears in the next line. Maintaining the block level flow. I am still confused why there is 2 gap below the Para2 instead of 1 margin equivalent gap.This margin may come from the float display issue. As it transform the display to block level element. And hence paragraph 2 retains it's new line property. After that it goes back to normal flow. It might also be from the overflow issue. </p>
+			<p id="p4">Para4 </p>
+	</div>
+<div class="container3">
+			<p id="p1">Para1 </p>
+			<p id="p2">Para2 </p>
+			<p id="p3">Para3 </p>
+			<p id="p4">Para4 : Here, in the normal flow without float:left property there is a white line above and below the Para2. So as we float it, para3 floats to occupy the space above paragraph 2. But it does not float all the way above Para 2. It maintains margin:20px property of the Para2. Again the available empty space after Para2 content is occupied by the white space (margin ) in the normal flow. Para4 now floats to occupy space right after para2 new line space. White line below is from Para4 margin below. And everything continues to the normal flow after.</p>
+			<p id="p5"> Look at a different scenario by adding margin:0 to paragraph 2 and 4.</p>
+			<p id="p6">Here, in the normal flow without float:left property there is a white line above and below the Para2. So as we float it, para3 floats to occupy the space above paragraph 2. But it does not float all the way above Para 2. It maintains margin:20px property of the Para2. Again the available empty space after Para2 content is occupied by the white space (margin ) in the normal flow. Para4 now floats to occupy space right after para2 new line space. White line below is from Para4 margin below. And everything continues to the normal flow after. </p>
+	</div>
+
+	</body>
+	
+</html>
