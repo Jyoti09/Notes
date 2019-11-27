@@ -1,0 +1,69 @@
+<!doctype html>
+<html>
+<head>
+<style>
+	div{
+		border:1px solid green;
+		padding: 10px;
+		margin: 10px;
+	}
+	.menuBar{
+		display: flex;	
+		flex-direction: row;
+		flex-wrap: wrap;
+		justify-content:flex-start;
+	}
+
+	.menuBarItem{
+		border: 1px solid black;
+		list-style:none;
+		padding: 10px;
+		font-size: 130%;
+		margin: 5px 5px;
+		
+
+		
+	}
+</style>
+
+</head>
+
+<body>
+<div>
+<h1>My goal is to create a responsive menu bar using flex for various projects. </h1>
+
+<uol>
+		<li> Products </li>
+	<li> Price </li>
+	<li> Technicians</li>
+	<li> Prices</li>
+	<li> Contact us </li>
+	<li> Gallery </li>
+	
+</uol>
+
+</div>
+
+<div style="max-width:550px;margin: 100px 0;">
+<uol class="menuBar">
+	<li class = menuBarItem> Products </li>
+	<li class = menuBarItem> Price </li>
+	<li class = menuBarItem> Technicians</li>
+	<li class = menuBarItem> Prices</li>
+	<li class = menuBarItem> Contact us </li>
+	<li class = menuBarItem> Gallery </li>
+	
+</uol>
+
+</div>
+
+<div>
+<h1> Notes! </h1>
+<uol>
+	<li>For my menu bar it is better to use <i>justify-content </i> just for center alignment, flex-start or flex end.  </li>
+<li>To have space between and around the flex items it is better to use margins. I believe, atleast for this project. </li>
+</uol>
+</div>
+</body>
+
+</html>
