@@ -10,21 +10,40 @@
 	.menuBar{
 		display: flex;	
 		flex-direction: row;
+		justify-content: flex-start;
 		flex-wrap: wrap;
-		justify-content:flex-start;
+		
 	}
 
 	.menuBarItem{
 		border: 1px solid #9c5498;
 		list-style:none;
-		padding: 10px;
 		font-size: 130%;
-		margin: 5px 5px;
-		border-radius:5px; 
+		border-radius:5px;
+		align-self: center; 
+		margin: 5px;
+		padding: 5px;
+		}
+
+	.menuBarSubItem{
+		list-style: none;
+		font-size: 100%;
+		background: gray;
+		margin: 2.5px;
+		padding: 2;		
 		}
 	.menuBarItem:hover{
-	background-color: #9c5498;	
+	background-color: #9c5498;}
+
+	#serviceList{
+	display: none;	
 	}
+	#services:hover #serviceList{
+		display: block;	
+	}
+	
+	
+	
 </style>
 
 </head>
@@ -34,12 +53,12 @@
 <h1>My goal is to create a responsive menu bar using flex for various projects. </h1>
 
 <uol>
-		<li> Products </li>
+		<li> Services</li>
 	<li> Price </li>
 	<li> Technicians</li>
 	<li> Prices</li>
 	<li> Contact us </li>
-	<li> Gallery </li>
+	<li> Gallery </li> 
 	
 </uol>
 
@@ -47,12 +66,24 @@
 
 <div style="max-width:550px;margin: 100px 0;">
 <uol class="menuBar">
-	<li class = menuBarItem> Products </li>
-	<li class = menuBarItem> Price </li>
-	<li class = menuBarItem> Technicians</li>
-	<li class = menuBarItem> Prices</li>
-	<li class = menuBarItem> Contact us </li>
-	<li class = menuBarItem> Gallery </li>
+	<li class="menuBarItem" id="services">Services
+	<div id="serviceList">
+	<ul>
+		<li class="menuBarSubItem">Shellac manicure </li>
+		<li class="menuBarSubItem">Shellac pedicure </li>
+	`	<li class="menuBarSubItem">Gel-overlay </li>
+		<li class="menuBarSubItem">Gel refill</li>
+		<li class="menuBarSubItem">Nail Art</li>
+		<li class="menuBarSubItem">Waxing </li>
+		<li class="menuBarSubItem">Threading </li>
+		<li class="menuBarSubItem"> Facial</li>
+	</ul>
+	</div>
+
+</li>
+	<li class="menuBarItem"> Price </li>
+	<li class="menuBarItem"> Technicians</li>	<li class="menuBarItem"> Contact us </li>
+	<li class="menuBarItem"> Gallery </li>
 	
 </uol>
 
@@ -63,6 +94,11 @@
 <uol>
 	<li>For my menu bar it is better to use <i>justify-content </i> just for center alignment, flex-start or flex end.  </li>
 <li>To have space between and around the flex items it is better to use margins. I believe, atleast for this project. </li>
+<li>Use <u><i>justify-content </i> with flex-direction:row  </u></li>
+<li>Use <u><i>align-content </i> with flex-direction:column  </u></li>
+<li>However, <i>align-items </i> is used to align flex-items vertically. </li>
+<li> For all above flex-container property, we can use <u><i>center, flex-start, flex-end,space-around, space-between </i> </u> as the values </li>
+<li>stretch is for align-items only. </li>
 </uol>
 </div>
 </body>
