@@ -1,0 +1,98 @@
+<!doctype html>
+<head>
+</head>
+
+<style>
+	div{
+	border: 1px solid black;
+	margin: 20px;}
+
+	#nav > ul{
+	display: flex;
+	justify-content: space-around;
+	background: rgb(128,128,128);
+	list-style-type: none;
+	}
+	.subMenu1{
+		display: none;
+	}
+	.subMenu2{
+		display: none;}
+	
+	#nav ul li:hover{
+			background: red;
+	}
+	.menu:hover .subMenu1{
+	display: flex;	
+	flex-direction: column;
+	list-style-type: none;
+	position: absolute;
+	background: gray;
+	}
+	
+	.menu2:hover .subMenu2{
+		display: flex;
+		flex-direction: column;
+		list-style-type: none;
+		background: gray;
+	} 
+
+	
+</style>
+
+
+<body>
+
+<div>
+<ul>
+<li>Home</li>
+<li>Services 
+	<ul><li>Android Dev </li> 
+		<li>iOS Dev </li>  
+		<li>Web Dev  
+			<ul><li>Node js </li> 
+				<li> PHP </li>
+					<li> Python </li></ul>
+		</li>
+
+
+</ul>
+</li>
+	
+<li>Downloads</li>
+<li>FAQs <ul><li> Android </li> <li> iOS</li> </ul></li>
+<li>About</li>
+<li>Gallery</li>
+<li>Contact us</li>
+</ul>
+
+</div>
+
+
+<div id="nav">
+<ul>
+<li>Home</li>
+<li class="menu">Services 
+	<ul class="subMenu1" ><li>Android Dev </li> 
+		<li>iOS Dev </li>  
+		<li class = "menu2">Web Dev  
+			<ul class="subMenu2"><li>Node js </li> 
+				<li> PHP </li>
+					<li> Python </li></ul>
+		</li>
+
+
+</ul>
+</li>
+	
+<li>Downloads</li>
+<li class="menu">FAQs <ul class="subMenu1"><li> Android </li> <li> iOS</li> </ul></li>
+<li>About</li>
+<li>Gallery</li>
+<li>Contact us</li>
+</ul>
+
+</div>
+</body>
+<html>
+</html>
