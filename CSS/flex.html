@@ -12,6 +12,7 @@
 		flex-direction: row;
 		justify-content: flex-start;
 		flex-wrap: wrap;
+		background: gray;
 		
 	}
 
@@ -27,10 +28,10 @@
 
 	.menuBarSubItem{
 		list-style: none;
-		font-size: 100%;
+		font-size: 80%;
 		background: gray;
 		margin: 2.5px;
-		padding: 2px;		
+		padding: 2px;
 		}
 	.menuBarSubItem:hover{
 		background: rgba(128, 128, 128, 0.5);	
@@ -40,7 +41,7 @@
 	background-color: #9c5498;}
 
 	#serviceList{
-	display: none;	
+	display: none;
 	padding: 0px;
 	margin: 0px;
 	border: none;
@@ -50,13 +51,15 @@
 	margin: 0px;
 	padding: 0px;
 	}
+
 	#services:hover #serviceList{
-		display: block;	
+		display: flex;	
+		position: absolute;
+
 	}
 	
 	
-	
-</style>s
+</style>
 
 </head>
 
@@ -76,8 +79,8 @@
 
 </div>
 
-<div style="max-width:550px;margin: 100px 0;">
-<uol class="menuBar">
+<div style="max-width:550px; margin: 0 0;">
+<ul class="menuBar">
 	<li class="menuBarItem" id="services">Services
 	<div id="serviceList">
 	<ul>
@@ -95,9 +98,8 @@
 </li>
 	<li class="menuBarItem"> Price </li>
 	<li class="menuBarItem"> Technicians</li>	<li class="menuBarItem"> Contact us </li>
-	<li class="menuBarItem"> Gallery </li>
-	
-</uol>
+<li class="menuBarItem"> Gallery </li>
+</ul>
 
 </div>
 
@@ -111,6 +113,8 @@
 <li>However, <i>align-items </i> is used to align flex-items vertically. </li>
 <li> For all above flex-container property, we can use <u><i>center, flex-start, flex-end,space-around, space-between </i> </u> as the values </li>
 <li>stretch is for align-items only. </li>
+<li>Till the "commit 4cc36be2988c4798c2cce4ba23336ba8f87659c3 " I have managed to create a dropdown list to the serviceList. But I am not able to control the way dispaly changes after hovering over the service list.
+</li>
 </uol>
 </div>
 </body>
