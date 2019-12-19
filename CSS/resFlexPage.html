@@ -3,13 +3,47 @@
 	
 	<head>
 		<style>
-			body{
-				display: flex;
-				flex-direction: column;		
-			}
-			.item1{
+			.block{
 				background: gray;
 				
+			}
+			header{
+                         background:#b5e7a0;             
+			}
+			nav{
+			background: black;			
+			}
+			.container{
+			display: flex;	
+			margin-top: 0px;		
+			}
+			.subitem1{
+			flex: 30%; 
+			}
+			.subitem2{
+			flex: 70%;
+			}
+			.images{
+			display: flex;
+			flex-direction: column;
+			}
+			img{
+			background: lightgray;	
+			margin: 10px;	
+			}
+			header h2{
+			margin-bottom: 0px;
+			}
+			nav{
+			margin-top: 0px;
+			margin-bottom: 0px;
+			}
+
+			@media screen  and (max-width: 550px){
+			.container{
+			display: flex;
+			flex-direction: column;
+			}
 			}
 		</style>
 		
@@ -17,51 +51,53 @@
 
 	<body>
 
-		<header class="item1"> 
+		<header> 
 			<h1>My Website </h1>
 			<h2> With a flexible layout. </h2>		
 		</header>
 
-		<nav class="item2">
+		<nav>
 				<a href="#">Link </a>
 				<a href="#">Link </a>
 				<a href="#">Link </a>
 				<a href="#">Link </a>
 		</nav>
-		
-		<section class="item3">
+	<div class="container">	
+		<div class="subitem1">
+		<section class="block">
 			<h2> About me </h2>
 			<p> Photo of me </p>
-			<img src="" alt="Image" width=50%> 
+			<img src="" alt="Image" height=50px width=50px > 
 			<p>Some text describing about the Image1. What am I doing. How am I doing. How are they doing. When was it taken and all. </p>
 
 			<p>Second paragraph describing more about me. </p>
-				<img src="" alt="Image" width=50%>
-				<img src="" alt="Image" width=50%>
-				<img src="" alt="Image" width=50%>  
+<div class="images">
+				<img src="" alt="Image" height=50px width=50px >
+				<img src="" alt="Image" height=50px width=50px >
+				<img src="" alt="Image" height=50px width=50px >  
+</div>
 		</section>
-
-<section class="item4">
-	<div>
+		</div>
+<div class="subitem2">
+<section>
 	<h2>TITLE HEADING </h2>
 	<h3> Title description, Dec7, 2017 </h3>
-	<img src="" alt=Image" width="50%">
+	<img src="" alt=Image" height=100px width=50px >
 	<p>Some text </p>
 	<p>Add some more text to explain about the page, it's contains, what the image is about. How does that image relates to the title heading. And what is it. How is it. Please discard this. It is something random. </p>
-	</div>
 </section>
 
 
-<section class="item5">
-	<div>
+<section>
 	<h2>TITLE HEADING </h2>
 	<h3> Title description, Sep 2,2017  </h3>
 	<img src="" alt=Image" width="50%">
 	<p>Some text </p>
 	<p>Add some more text to explain about the page, it's contains, what the image is about. How does that image relates to the title heading. And what is it. How is it. Please discard this. It is something random. </p>
 </section>
-
-<footer style="width: 400px; height: 250px; background: gray;">
+</div>
+</div>
+<footer background: gray;" class="block">
 <p> Footer </p>
 </footer>		
 	</body>
